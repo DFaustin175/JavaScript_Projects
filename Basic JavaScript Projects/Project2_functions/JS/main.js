@@ -8,3 +8,7 @@ function concatenate() {
     sentence += " a lot from this book";
     document.getElementById("conwhatever").innerHTML = sentence;
 }
+
+function myFunction() {
+    document.getElementById("demo").innerHTML = "Hey World";
+}
