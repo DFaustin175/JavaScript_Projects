@@ -21,3 +21,8 @@ var awful = awful.fontcolor("blue");
 document.write(food, best, prettygood, awful);
 
 document.write(8+8);
+
+function changeColor(newColor) {
+    var elem = document.getElementById("para")
+    elem.style.color = newColor;
+}
