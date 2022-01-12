@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script src = "JS/main.js"></script>
+        <title>Scope Time Function</title>
+    </head>
+    
+    <body>
+        <p id = "firstFunction" onclick = "add1(20)">Click Here</p>
+        <br>
+        <p id = "secFunction" onclick = "sub1(20)">Click Here</p>
+        <br>
+        <p id = "wontwork" onclick = "error(20)">Click Here</p>
+        <br>
+        <p id = "todaysDate" onclick = displayDate()>Click Me</p>
+        <br>
+        <input id = "num" value = "">
+        <button onclick = checkVal()>Enter</button><br>
+        <p id = "check"></p>
+        <br>
+        <p>Input your age:</p>
+        <input id = "age" value = "">
+        <button onclick = checkAge()>Enter</button>
+        <p id = "Vote"></p>
+        <br>
+        <p id = "Time_of_day"></p>
+        <button onclick= Time_Function()>Click to get time of day</button>
+    </body>
+</html>
