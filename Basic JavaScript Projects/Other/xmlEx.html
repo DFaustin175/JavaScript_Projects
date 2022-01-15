@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id = "XML_Example"></p>
+        <script>
+            var XML_Parser, XML_Document;
+
+            var Pizza = "<pizza>" + 
+                        "<style>NY Style</style>" + 
+                        "<toppings>Pepperoni</toppings>" +
+                        "<cheese>Extra Cheese</cheese>" +
+                        "<sauce>Extra Sauce</sauce>" + 
+                        "</pizza>";
+
+            XML_Parser = new DOMParser();
+
+            XML_Document = XML_Parser.parseFromString(Pizza, "text/xml");
+
+            document.getElementById("XML_Example").innerHTML = 
+            XML_Document.getElementsByTagName("style")[0].childNodes[0].nodeValue; 
+        </script>
+    </body>
+</html>
